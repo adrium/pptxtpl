@@ -48,7 +48,7 @@ for ks in $(jq -r keys[] "$IN_JSON"); do
   grep -lr "$ks" | xargs sed -i '' "s~>[}%_]~>~"
   
   # string keys
-  v="$(jq -r .$ks "$IN_JSON")"
+  v="$(jq -r .$ks "$IN_JSON" | sed 's/&/\\\&amp;/g')"
   grep -lr "$ks" | xargs sed -i '' "s~[_%{]$ks[}%_]~$v~"
   grep -lr "$ks" | xargs sed -i '' "s~>$ks</~>$v</~"
   
