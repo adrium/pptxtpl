@@ -1,0 +1,10 @@
+{
+	"Hello": "Hello World & Foobar",
+	"Month": "October",
+	"TestString": "This is a test string",
+	"NumOtherAlerts": "1366",
+	"NumMDEAlerts": "76",
+	"NumMDIAlerts": "74",
+	"NumNETAlerts": "4",
+	"NumAllAlerts": "1520"
+}

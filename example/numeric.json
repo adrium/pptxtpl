@@ -1,0 +1,7 @@
+{
+	"100": "NumAllAlerts"
+	, "101": "NumOtherAlerts"
+	, "102": "NumMDEAlerts"
+	, "103": "NumMDIAlerts"
+	, "105": "NumNETAlerts"
+}
