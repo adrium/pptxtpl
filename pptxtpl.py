@@ -12,8 +12,7 @@ def main(infn: str, numerics: dict, vars: dict, outfn: str):
 			param = numerics[param]
 		if param in vars:
 			result = vars[param]
-		if (isinstance(result, str)):
-			result = result.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+		result = str(result).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 		return result
 
 	replacers = [
